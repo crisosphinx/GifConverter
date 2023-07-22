@@ -24,7 +24,7 @@ def build(ctx):
     :type ctx: Context
     """
     ctx.run('pyinstaller -F --uac-admin --icon="./resources/ToGif.ico" --clean main.py')
-    dist_dir = Path('dist')
+    dist_dir = Path('ImageToGif')
     dist_file = dist_dir.joinpath('main.exe')
     new_file = dist_dir.joinpath('ImageToGif.exe')
     if new_file.exists():
