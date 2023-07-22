@@ -34,7 +34,7 @@ Any modifications to the software
 in the future can be provided or
 requested on the github of:
 
-https://www.github.com/crisosphinx.
+https://github.com/crisosphinx/GifConverter
 
 
 Copyright (c) 2023.
