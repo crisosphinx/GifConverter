@@ -1,0 +1,15 @@
+dist/
+data/
+ImageToGif/
+build/
+logs/
+venv/
+*.egg-info/
+
+*.gif
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.spec
+*.zip
