@@ -26,6 +26,9 @@ def build(ctx):
     ctx.run('pyinstaller -F --uac-admin --icon="./resources/ToGif.ico" --clean main.py')
     dist_dir = Path('dist')
     dist_file = dist_dir.joinpath('main.exe')
-    dist_file.rename('dist/ImageToGif.exe')
+    new_file = dist_dir.joinpath('ImageToGif.exe')
+    if new_file.exists():
+        new_file.unlink()
+    dist_file.rename(new_file)
     readme = Path('readme.txt')
     shutil.copy2(readme, dist_dir.joinpath(readme))
